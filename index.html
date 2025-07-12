@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img id="logo" src="ExpenseLogo.png" alt ="logo">
+        <p>BrokeBot</p> 
+        <button class="change-mode"><i class="fa-solid fa-moon"></i></button>
+    </header>
+
+    <div class="container">
+
+    <div class="main">
+        <div class="amount-input">
+            <div class="input-grp">
+                <label>Income</label>
+                <div class="rupee-input">
+                    <span>₹</span>
+                    <input id="amount" type="number">
+                </div>
+            </div>
+            <div class="input-grp">
+                <label>Expense</label>
+                <div class="rupee-input">
+                    <span>₹</span>
+                    <input id="expense" type="number" readonly>
+                </div>
+            </div>
+        </div>
+        <button id="add-new-item">Add new item</button>
+    </div>
+    
+
+    
+        <div class="items-list">
+            <table class="items-table">
+                  <colgroup>
+                    <col id="col-1" style="width: 30%;">
+                    <col id="col-2" style="width: 35%;">
+                    <col id="col-3" style="width: 35%;">
+                  </colgroup>
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                      <td><input type="date" class="date-input" max={date}></td>
+                      <td><input type="text" class="item"></td>
+                      <td id="price-box">
+                        <div class="price">
+                            <span>₹</span>
+                            <input type="number" class="input-price">
+                        </div>
+                      </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+            <div class="calc-btn">
+                <button class="calc-expense">Calculate Expense</button>
+                <p id="display-msg"></p>
+                <button id="clear">Clear</button>
+            </div>
+
+            </div>
+            
+        <footer class = "foot">
+        
+             <p>© 2025 My Expense Tracker. All rights reserved.</p>
+             <p>Made with ❤️ by ShadowShogun00</p>
+
+             <p><a href="#">About Us</a> | <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+  
+             <p>Contact us: <a href="mailto:support@myexpensetracker.com">support@myexpensetracker.com</a></p>
+  
+             <p>Follow us on: 
+                 <a href="#">Instagram</a> | 
+                 <a href="#">Twitter</a> | 
+                 <a href="#">GitHub</a>
+            </p>
+
+             <p>Disclaimer: This is a personal project for tracking expenses and does not offer financial advice.</p>
+        </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

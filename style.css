@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: white; */
+    overflow-x: hidden;
+}
+
+/*---------------Change-mode--------------------*/
+
+.body-dark-mode {
+  background-color: #33333B;
+  /* color: white; */
+}
+
+.header-dark-mode {
+  background-color: #b5b5ae;
+  color: black;
+}
+
+.label-dark-mode {
+  color: white;
+}
+
+.display-msg-dark-mode {
+  color: white;
+}
+
+.change-mode-dark-mode {
+  background: linear-gradient(rgb(187, 177, 177) , #5C5346) !important;
+}
+
+.button-dark-mode {
+  background-color: #b5b5ae !important;
+  color: black !important;
+}
+
+/*---------------Change-mode--------------------*/
+
+
+header {
+  height: 120px;
+  background-color: #862539;
+  width: 100vw;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  position: relative;
+}
+
+#logo {
+  height: 80px;
+  width: 90px;
+}
+
+.change-mode {
+  height: 60px;
+  width: 60px;
+  background: linear-gradient(#ec7876 , #8b172e);
+  position: absolute;
+  /* top: 20px; */
+  right: 40px;
+  /* padding: 8px 12px; */
+  /* z-index: 1000;  */
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.change-mode i {
+  font-size: 25px;
+}
+
+
+/* style.css */
+
+body {
+  /* margin: 0; */
+  min-height: 100vh;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  /* margin-top: 40px; */
+  background-color: #E0D08C;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content : flex-start;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.main {
+  height: 160px;
+  width: 500px;
+  /* border: 2px solid #ccc; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.amount-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 30px;
+}
+
+input {
+  height: 20px;
+  width: 140px;
+}
+
+.input-grp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+#add-new-item {
+  height: 35px;
+  width: 120px;
+  margin-top: 30px;
+  background-color: #862539;
+  border-radius: 10px;
+  color: white;
+}
+
+.items-list {
+  /* display: block; */
+  /* height: 100px; */
+  width: 70vw;
+  margin-top: 20px;
+  background-color: white;
+
+  max-height: 344px; /* Set your desired height */
+  overflow-y: auto;  /* Enables vertical scrolling */
+  /* border: 1px solid #ccc; Optional: for visual clarity */
+  margin-left: 30px;
+}
+
+.items-table {
+  width: 100%;
+  /* table-layout: fixed; Makes columns equal width */
+  text-align: center;
+  font-size: 18px;
+}
+
+.items-table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    /* vertical-align: middle; */
+}
+
+
+input {
+  border: 0px solid black;
+  outline: none;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 4px 8px;
+  font-size: 16px;
+  width: 150px;
+}
+
+
+
+.rupee-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  /* padding: 4px 8px; */
+  background-color: white;
+  /* width: fit-content; */
+}
+
+.rupee-input span {
+  font-size: 20px;
+  margin-right: 6px;
+  color: black;
+  margin: 4px 8px;
+}
+
+
+.rupee-input input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  /* width: 100px; */
+  /* height: 100%; */
+  /* padding-left: 20px; */
+}
+
+input[type="date"] {
+  width: 140px; /* adjust to your design */
+}
+
+table input {
+  outline: none;
+}
+
+#item {
+  outline: 1.2px solid black;
+  width: fit-content;
+}
+
+#price-box {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.2px solid black;
+  border-radius: 5px;
+  width: 210px;
+  padding: 5px 10px;
+  gap: 8px;
+}
+
+#price {
+  width: 210px;
+  border: 1.2px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.calc-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.calc-expense {
+  margin-top: 50px;
+  border-radius: 20px;
+  height: 45px;
+  width: 160px;
+  font-size: 16px;
+  background-color: #862539;
+  color: white;
+}
+
+#display-msg {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#clear {
+  border-radius: 20px;
+  height: 45px;
+  width: 100px;
+  font-size: 16px;
+  background-color: #862539;
+  color: white;
+}
+
+.foot{
+  height: 120px;
+  background-color: #862539;
+  /* width: 100vw;
+  margin-bottom: auto;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative; */
+}
+
+.foot {
+  /* margin-top: auto; */
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @media  screen and (max-width : 1000px){
+  .items-list {
+    width: 50vw;
+  }
+} */
+
+/* @media screen and (max-width: 768px) {
+  .items-list {
+    width: 90vw;
+    margin-left: 0;
+  }
+
+  .items-table th,
+  .items-table td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .price input {
+    width: 100px;
+  }
+} */
+
+
+ 
