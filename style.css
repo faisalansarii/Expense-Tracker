@@ -34,11 +34,16 @@
   color: black !important;
 }
 
+.footer-dark-mode {
+  background-color: #b5b5ae;
+  color: black;
+}
+
 /*---------------Change-mode--------------------*/
 
 
 header {
-  height: 120px;
+  height: 140px;
   background-color: #862539;
   width: 100vw;
   margin-bottom: 20px;
@@ -74,7 +79,7 @@ header {
 }
 
 
-/* style.css */
+/* style.css */         
 
 body {
   /* margin: 0; */
@@ -87,16 +92,17 @@ body {
   flex-direction: column;
 }
 
-.container {
+.container {    
   display: flex;
-  justify-content : flex-start;
+  /* justify-content : flex-start; */
   flex-direction: column;
   align-items: center;
   flex: 1;
+  margin-top: 15px;
 }
 
 .main {
-  height: 160px;
+  height: 200px;
   width: 500px;
   /* border: 2px solid #ccc; */
   display: flex;
@@ -112,11 +118,12 @@ body {
   align-items: center;
   gap: 60px;
   margin-top: 30px;
+  font-size: 20px;
 }
 
 input {
-  height: 20px;
-  width: 140px;
+  height: 35px;
+  width: 160px;
 }
 
 .input-grp {
@@ -127,22 +134,24 @@ input {
 }
 
 #add-new-item {
-  height: 35px;
-  width: 120px;
-  margin-top: 30px;
+  height: 50px;
+  width: 140px;
+  margin-top: 35px;
   background-color: #862539;
   border-radius: 10px;
   color: white;
+  border: 2px solid whitesmoke;
+  font-size: 16px;
 }
 
 .items-list {
   /* display: block; */
   /* height: 100px; */
   width: 70vw;
-  margin-top: 20px;
+  margin-top: 40px;
   background-color: white;
 
-  max-height: 344px; /* Set your desired height */
+  max-height: 530px; 
   overflow-y: auto;  /* Enables vertical scrolling */
   /* border: 1px solid #ccc; Optional: for visual clarity */
   margin-left: 30px;
@@ -152,7 +161,7 @@ input {
   width: 100%;
   /* table-layout: fixed; Makes columns equal width */
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .items-table, th, td {
@@ -169,7 +178,7 @@ input {
   border-radius: 4px;
   width: fit-content;
   padding: 4px 8px;
-  font-size: 16px;
+  font-size: 20px;
   width: 150px;
 }
 
@@ -213,15 +222,17 @@ table input {
 #item {
   outline: 1.2px solid black;
   width: fit-content;
+  height: 40px;
+  width: 230px;
 }
 
 #price-box {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-content: center; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.price {
+/* .price {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -238,8 +249,18 @@ table input {
   border-radius: 5px;
   display: flex;
   justify-content: center;
-}
+} */
 
+.price, #price { 
+  width: 210px; 
+  /* display: flex;  */
+  /* justify-content: center; */
+  /* align-items: center; */
+  border: 1.2px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  gap: 8px;
+}
 
 .calc-btn {
   display: flex;
@@ -252,47 +273,55 @@ table input {
 .calc-expense {
   margin-top: 50px;
   border-radius: 20px;
-  height: 45px;
-  width: 160px;
+  height: 55px;
+  width: 180px;
   font-size: 16px;
   background-color: #862539;
   color: white;
+  border: 2px solid whitesmoke;
+  font-size: 17px;
 }
 
 #display-msg {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #clear {
   border-radius: 20px;
-  height: 45px;
+  height: 50px;
   width: 100px;
   font-size: 16px;
   background-color: #862539;
   color: white;
+  border: 2px solid whitesmoke;
+  font-size: 18px;
 }
 
-.foot{
-  height: 120px;
+button:hover {
+  cursor: pointer;
+}
+
+footer{
+  height: 250px;
   background-color: #862539;
-  /* width: 100vw;
-  margin-bottom: auto;
-  justify-content: center;
+  width: 100vw;
+  margin-bottom: 0;
   align-items: center;
   color: white;
-  position: relative; */
+  /* position: relative; */
+  padding: 50px;
+  display: flex;
+  /* justify-content: cente5r; */
+  text-align: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  font-size: 25px;
 }
 
-.foot {
-  /* margin-top: auto; */
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-  margin-top: auto;
-}
 
 
 

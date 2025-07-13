@@ -17,11 +17,13 @@ let label = document.querySelectorAll("label");
 // let webName = document.querySelector("header p");
 let header = document.querySelector("header");
 let buttons = document.querySelectorAll("button");
+let footer = document.querySelector("footer");
 
 function changeMode() {
     body.classList.toggle("body-dark-mode");
     // webName.classList.toggle("");
     header.classList.toggle("header-dark-mode");
+    footer.classList.toggle("footer-dark-mode");
     label.forEach((l) => {
         l.classList.toggle("label-dark-mode");
     });
@@ -32,7 +34,7 @@ function changeMode() {
     });
     
     let isDark = body.classList.contains("body-dark-mode");
-    localStorage.setItem("mode" , isDark ? "dark" : "light");
+    localStorage.setItem("mode" , isDark ? "dark" : "light")
 }
 
     modeBtn.addEventListener("click", () => {
@@ -49,7 +51,7 @@ const addRow = () => {
     newRow.innerHTML = `
         <td><input type="date" class="date-input"></td>
         <td><input type="text" id="item"></td>
-        <td>
+        <td id="price-box">
             <div id="price">
                 <span>₹</span>
                 <input type="number" id="input-price">
