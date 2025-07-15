@@ -230,6 +230,7 @@ table input {
   display: flex;
   justify-content: center;
   align-content: center;
+  /* border: none; */
 }
 
 /* .price {
@@ -251,7 +252,7 @@ table input {
   justify-content: center;
 } */
 
-.price, #price { 
+#price { 
   width: 210px; 
   /* display: flex;  */
   /* justify-content: center; */
@@ -260,7 +261,10 @@ table input {
   border-radius: 5px;
   padding: 5px 10px;
   gap: 8px;
+    /* margin-left: 50%; */
+  /* margin-right: 25%; */
 }
+
 
 .calc-btn {
   display: flex;
@@ -305,7 +309,7 @@ button:hover {
 }
 
 footer{
-  height: 250px;
+  height: 60px;
   background-color: #862539;
   width: 100vw;
   margin-bottom: 0;
@@ -333,28 +337,68 @@ footer{
 
 
 
-/* @media  screen and (max-width : 1000px){
+/* @media  screen and (max-width : 1050px){
   .items-list {
-    width: 50vw;
+    width: 40vw;
+  }
+  .items-table {
+    width: 100px;
+    columns: 3 auto;
   }
 } */
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .items-list {
-    width: 90vw;
+    width: 70vw;
     margin-left: 0;
+  }
+
+  .items-table {
+    /* width: 100%; */
   }
 
   .items-table th,
   .items-table td {
+    font-size: 18px;
+    /* padding: 6px; */
+  }
+
+
+  input[type="date"]  {
     font-size: 14px;
-    padding: 6px;
+    width: 110px;
   }
-
-  .price input {
+  
+  #item {
+    width: 120px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  #price input {
     width: 100px;
+    height: 25px;
+    font-size: 14px;
   }
-} */
+  
+  #price {
+    width: auto;
+    height: 30px;
+    overflow-y: hidden;
+  }
+
+  .input-price {
+    width: 20px;
+    /* font-size: 10px; */
+  }
+}
 
 
- 
+
+@media screen and (max-width : 730px) {
+  .items-list {
+    /* width: 60vw; */
+  }
+
+  
+}

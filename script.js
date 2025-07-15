@@ -54,7 +54,7 @@ const addRow = () => {
         <td id="price-box">
             <div id="price">
                 <span>₹</span>
-                <input type="number" id="input-price">
+                <input type="number" class="input-price">
             </div>
         </td>`;
     return newRow;
@@ -75,7 +75,7 @@ function saveItemsToStorage() {
 }
 
 function savePricesToStorage() {
-    const priceInputs = document.querySelectorAll('input[id="input-price"]');
+    const priceInputs = document.querySelectorAll(".input-price");
     const values = Array.from(priceInputs).map(input => input.value);
     localStorage.setItem("priceList", JSON.stringify(values));
 }
@@ -96,7 +96,7 @@ function loadAllFromStorage() {
 
     const dateInputs = document.querySelectorAll('.date-input');
     const itemInputs = document.querySelectorAll('input[id="item"]');
-    const priceInputs = document.querySelectorAll('input[id="input-price"]');
+    const priceInputs = document.querySelectorAll(".input-price");
 
     dateInputs.forEach((input, index) => {
         input.value = dates[index] || "";
@@ -134,7 +134,7 @@ newItemBtn.addEventListener("click", () => {
 
     const dateInput = newRow.querySelector(".date-input");
     const itemInput = newRow.querySelector('input[id="item"]');
-    const priceInput = newRow.querySelector('input[id="input-price"]');
+    const priceInput = newRow.querySelector(".input-price");
 
     dateInput.addEventListener("input", saveDatesToStorage);
     itemInput.addEventListener("input", saveItemsToStorage);
@@ -160,7 +160,7 @@ clearBtn.addEventListener("click", () => {
 
     const dateInput = firstRow.querySelector(".date-input");
     const itemInput = firstRow.querySelector('input[id="item"]');
-    const priceInput = firstRow.querySelector('input[id="input-price"]');
+    const priceInput = firstRow.querySelector(".input-price");
 
     dateInput.addEventListener("input", saveDatesToStorage);
     itemInput.addEventListener("input", saveItemsToStorage);
@@ -170,7 +170,7 @@ clearBtn.addEventListener("click", () => {
 // ------------------ Calculate Expense and Display Savings -----------------------
 
 calcBtn.addEventListener("click", () => {
-    const priceInputs = document.querySelectorAll('input[id="input-price"]');
+    const priceInputs = document.querySelectorAll(".input-price");
     let totalExpense = 0;
 
     priceInputs.forEach(input => {
