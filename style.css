@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /*---------------Change-mode--------------------*/
@@ -326,10 +326,10 @@ footer{
 
 @media screen and (max-width: 1000px) {
 
-  .items-list {
+  /* .items-list {
     width: 70vw;
     margin-left: 0;
-  }
+  } */
 
   .items-table th,
   .items-table td {
@@ -425,4 +425,12 @@ footer{
     width: 120px;
   }
 
+}
+
+
+@media screen and (max-width: 550px) {
+
+  .items-table {
+    overflow-x: auto;
+  }
 }
