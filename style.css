@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* background-color: white; */
     overflow-x: hidden;
 }
 
@@ -9,7 +8,6 @@
 
 .body-dark-mode {
   background-color: #33333B;
-  /* color: white; */
 }
 
 .header-dark-mode {
@@ -29,9 +27,20 @@
   background: linear-gradient(rgb(187, 177, 177) , #5C5346) !important;
 }
 
+.change-mode-dark-mode:hover {
+  height: 65px;
+  width: 65px;
+  background: linear-gradient(rgb(146, 140, 140) , #484137) !important;
+}
+
 .button-dark-mode {
   background-color: #b5b5ae !important;
   color: black !important;
+  transition-duration: 0.2s;
+}
+
+.button-dark-mode:hover {
+  background-color: #92928a !important;
 }
 
 .footer-dark-mode {
@@ -52,7 +61,6 @@ header {
   align-items: center;
   font-size: 50px;
   color: white;
-  position: relative;
 }
 
 #logo {
@@ -61,41 +69,46 @@ header {
   margin-bottom: 20px;
 }
 
+#logo-container {
+  display: flex;
+}
+
+#logo-container p {
+  margin-top: 30px;
+}
+
 .change-mode {
   height: 60px;
   width: 60px;
   background: linear-gradient(#ec7876 , #8b172e);
   position: absolute;
-  /* top: 20px; */
   right: 40px;
-  /* padding: 8px 12px; */
-  /* z-index: 1000;  */
   border-radius: 50%;
   cursor: pointer;
   border: 2px solid black;
+  transition-duration: 0.2s;
 }
 
 .change-mode i {
   font-size: 25px;
 }
 
-
-/* style.css */         
+.change-mode:hover {
+  height: 65px;
+  width: 65px;
+  background: linear-gradient(#cf6a69 , #791428) ;
+}
 
 body {
-  /* margin: 0; */
   min-height: 100vh;
   display: flex;
-  /* justify-content: flex-start; */
   align-items: center;
-  /* margin-top: 40px; */
   background-color: #E0D08C;
   flex-direction: column;
 }
 
 .container {    
   display: flex;
-  /* justify-content : flex-start; */
   flex-direction: column;
   align-items: center;
   flex: 1;
@@ -105,9 +118,7 @@ body {
 .main {
   height: 200px;
   width: 500px;
-  /* border: 2px solid #ccc; */
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   font-family: sans-serif;
@@ -143,24 +154,27 @@ input {
   color: white;
   border: 2px solid whitesmoke;
   font-size: 16px;
+  transition-duration: 0.2s;
+}
+
+#add-new-item:hover {
+  height: 55px;
+  width: 145px;
+  font-size: 18px;
+  background-color: #752232;
 }
 
 .items-list {
-  /* display: block; */
-  /* height: 100px; */
   width: 70vw;
   margin-top: 40px;
   background-color: white;
-
   max-height: 530px; 
-  overflow-y: auto;  /* Enables vertical scrolling */
-  /* border: 1px solid #ccc; Optional: for visual clarity */
+  overflow-y: auto;  
   margin-left: 30px;
 }
 
 .items-table {
   width: 100%;
-  /* table-layout: fixed; Makes columns equal width */
   text-align: center;
   font-size: 25px;
 }
@@ -169,7 +183,6 @@ input {
     border: 2px solid black;
     border-collapse: collapse;
     padding: 10px;
-    /* vertical-align: middle; */
 }
 
 
@@ -190,9 +203,7 @@ input {
   align-items: center;
   border: 1px solid black;
   border-radius: 4px;
-  /* padding: 4px 8px; */
   background-color: white;
-  /* width: fit-content; */
 }
 
 .rupee-input span {
@@ -207,17 +218,10 @@ input {
   border: none;
   outline: none;
   font-size: 16px;
-  /* width: 100px; */
-  /* height: 100%; */
-  /* padding-left: 20px; */
 }
 
 input[type="date"] {
-  width: 140px; /* adjust to your design */
-}
-
-table input {
-  outline: none;
+  width: 140px;
 }
 
 #item {
@@ -228,43 +232,16 @@ table input {
 }
 
 #price-box {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  /* border-left: 0.1px solid black; */
-  /* border: none; */
+  text-align: center;
 }
-
-/* .price {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1.2px solid black;
-  border-radius: 5px;
-  width: 210px;
-  padding: 5px 10px;
-  gap: 8px;
-}
-
-#price {
-  width: 210px;
-  border: 1.2px solid black;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-} */
 
 #price { 
   width: 210px; 
-  /* display: flex;  */
-  /* justify-content: center; */
-  /* align-items: center; */
   border: 1.2px solid black;
   border-radius: 5px;
   padding: 5px 10px;
   gap: 8px;
-    /* margin-left: 50%; */
-  /* margin-right: 25%; */
+  display: inline-block;
 }
 
 
@@ -286,6 +263,14 @@ table input {
   color: white;
   border: 2px solid whitesmoke;
   font-size: 17px;
+  transition-duration: 0.2s;
+}
+
+.calc-expense:hover {
+  height: 60px;
+  width: 190px;
+  font-size: 20px;
+  background-color: #752232;
 }
 
 #display-msg {
@@ -304,6 +289,14 @@ table input {
   color: white;
   border: 2px solid whitesmoke;
   font-size: 18px;
+  transition-duration: 0.2s;
+}
+
+#clear:hover {
+  height: 55px;
+  width: 110px;
+  font-size: 20px;
+  background-color: #752232;
 }
 
 button:hover {
@@ -317,10 +310,8 @@ footer{
   margin-bottom: 0;
   align-items: center;
   color: white;
-  /* position: relative; */
   padding: 50px;
   display: flex;
-  /* justify-content: cente5r; */
   text-align: center;
   flex-direction: column;
   gap: 15px;
@@ -333,34 +324,16 @@ footer{
 
 
 
-
-
-
-
-/* @media  screen and (max-width : 1050px){
-  .items-list {
-    width: 40vw;
-  }
-  .items-table {
-    width: 100px;
-    columns: 3 auto;
-  }
-} */
-
 @media screen and (max-width: 1000px) {
+
   .items-list {
     width: 70vw;
     margin-left: 0;
   }
 
-  .items-table {
-    /* width: 100%; */
-  }
-
   .items-table th,
   .items-table td {
     font-size: 18px;
-    /* padding: 6px; */
   }
 
 
@@ -387,18 +360,69 @@ footer{
     overflow-y: hidden;
   }
 
-  .input-price {
-    width: 20px;
-    /* font-size: 10px; */
-  }
 }
 
 
 
 @media screen and (max-width : 730px) {
+
+  .input-price {
+    width: 70px !important;
+  }
+  
+}
+
+
+@media screen and (max-width : 660px) {
   .items-list {
-    /* width: 60vw; */
+    width: 60vw;
   }
 
+  .items-table td , 
+  .items-table th {
+    font-size: 12px;
+  } 
+
+  .input-price {
+    width: 70px !important;
+  }
   
+  input[type="date"]  {
+    font-size: 12px;
+    width: 80px;
+  }
+
+  #item {
+    width: 50px;
+    height: 18px;
+  }
+  
+  #price {
+    width: 60px;
+    height: 18px;
+    text-align: left;
+  }
+
+  .input-price {
+    width: 30px !important;
+    margin-left: 0;
+    height: 10px !important;
+  }
+
+}
+
+@media screen and (max-width: 530px) {
+
+  header {
+    justify-content: space-between;
+  }
+
+  .rupee-input {
+    width: 150px;
+  } 
+
+  #amount , #expense {
+    width: 120px;
+  }
+
 }
