@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /*---------------Change-mode--------------------*/
@@ -54,7 +54,7 @@
 header {
   height: 140px;
   background-color: #862539;
-  width: 100vw;
+  width: 200vw;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -87,6 +87,7 @@ header {
   cursor: pointer;
   border: 2px solid black;
   transition-duration: 0.2s;
+  overflow-y: hidden;
 }
 
 .change-mode i {
@@ -101,6 +102,7 @@ header {
 
 body {
   min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   align-items: center;
   background-color: #E0D08C;
@@ -165,16 +167,21 @@ input {
 }
 
 .items-list {
-  width: 70vw;
+  min-width: 70vw;
   margin-top: 40px;
   background-color: white;
   max-height: 530px; 
   overflow-y: auto;  
   margin-left: 30px;
+  display: block;
+  overflow-x: auto;
+  width: 100%;
 }
+
 
 .items-table {
   width: 100%;
+  min-width: 550px;
   text-align: center;
   font-size: 25px;
 }
@@ -306,7 +313,7 @@ button:hover {
 footer{
   height: 60px;
   background-color: #862539;
-  width: 100vw;
+  width: 200vw;
   margin-bottom: 0;
   align-items: center;
   color: white;
@@ -326,10 +333,15 @@ footer{
 
 @media screen and (max-width: 1000px) {
 
-  /* .items-list {
-    width: 70vw;
-    margin-left: 0;
-  } */
+  .items-list {
+    /* width: 80vw; */
+    overflow-x: auto;
+    min-width:600px;
+  } 
+
+  body {
+    overflow-x: auto;
+  }
 
   .items-table th,
   .items-table td {
@@ -359,23 +371,35 @@ footer{
     height: 30px;
     overflow-y: hidden;
   }
+}
+
+@media screen and (max-width: 800px) {
+
+  
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.items-table {
+  overflow-x: auto;
+}
 
 }
 
 
-
-@media screen and (max-width : 730px) {
+/* @media screen and (max-width : 730px) {
 
   .input-price {
-    width: 70px !important;
+    width: 80px !important;
   }
   
-}
+} */
 
 
 @media screen and (max-width : 660px) {
 
-  .items-table td , 
+  /* .items-table td , 
   .items-table th {
     font-size: 12px;
   } 
@@ -404,26 +428,18 @@ footer{
     width: 30px !important;
     margin-left: 0;
     height: 10px !important;
-  }
+  } */
 
 }
 
-@media screen and (max-width: 530px) {
+ @media screen and (max-width: 530px) {
 
   header {
     justify-content: space-between;
   }
 
-  .rupee-input {
-    width: 150px;
-  } 
 
-  #amount , #expense {
-    width: 120px;
-  }
 
-  .items-list {
-    overflow-x: auto;
-  }
+ 
 
-}
+}  
