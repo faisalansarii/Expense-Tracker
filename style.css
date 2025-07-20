@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 /*---------------Change-mode--------------------*/
@@ -50,11 +50,11 @@
 
 /*---------------Change-mode--------------------*/
 
-
 header {
   height: 140px;
   background-color: #862539;
-  width: 200vw;
+  width: 100%;
+  /* min-width: 630px; */
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -102,11 +102,12 @@ header {
 
 body {
   min-height: 100vh;
-  min-width: 100vw;
+  /* min-width: 100vw; */
   display: flex;
   align-items: center;
   background-color: #E0D08C;
   flex-direction: column;
+  /* overflow-x: auto; */
 }
 
 .container {    
@@ -167,7 +168,8 @@ input {
 }
 
 .items-list {
-  min-width: 70vw;
+  width: 70vw;
+  /* width: 100%; */
   margin-top: 40px;
   background-color: white;
   max-height: 530px; 
@@ -175,15 +177,15 @@ input {
   margin-left: 30px;
   display: block;
   overflow-x: auto;
-  width: 100%;
 }
 
 
 .items-table {
   width: 100%;
-  min-width: 550px;
+  /* min-width: 650px; */
   text-align: center;
   font-size: 25px;
+  /* overflow-x: auto; */
 }
 
 .items-table, th, td {
@@ -313,7 +315,8 @@ button:hover {
 footer{
   height: 60px;
   background-color: #862539;
-  width: 200vw;
+  width: 100%;
+  min-width: 630px;
   margin-bottom: 0;
   align-items: center;
   color: white;
@@ -336,11 +339,11 @@ footer{
   .items-list {
     /* width: 80vw; */
     overflow-x: auto;
-    min-width:600px;
+    /* min-width:600px; */
   } 
 
   body {
-    overflow-x: auto;
+    /* overflow-x: auto; */
   }
 
   .items-table th,
@@ -375,14 +378,43 @@ footer{
 
 @media screen and (max-width: 800px) {
 
-  
-.table-wrapper {
-  width: 100%;
+
+.items-list {
+  width: 370px;
   overflow-x: auto;
 }
 
 .items-table {
+  width: 300px;
   overflow-x: auto;
+}
+
+#item {
+  width: 70px;
+}
+
+#price {
+  width: 70px;
+  height: 26px;
+  overflow-x: hidden;
+  text-align: left;
+}
+
+.input-price {
+  width: 35px !important;
+}
+
+.date-input {
+  width: 100px !important;
+}
+
+.amount-input {
+  gap: 20px;
+}
+
+#display-msg {
+  font-size: 2rem;
+  width: 300px;
 }
 
 }
